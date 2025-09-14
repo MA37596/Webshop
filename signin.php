@@ -304,7 +304,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </style>
 </head>
 <body>
-    <div class="signin-container">
+    <div class="signup-container">
         <div class="logo">
             <div class="logo-img-wrap">
                 <img src="file-apple-logo-black-svg-wikimedia-commons-1.png" alt="Apple Logo">
@@ -337,7 +337,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <button type="submit" class="signup-btn login-btn">
                 <span>🔒</span> Inloggen
-            </button>         
+            </button>        
 
             <div class="login-link">
                 Nog geen account? <a href="signup.php">Account aanmaken</a>

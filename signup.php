@@ -98,10 +98,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             margin-bottom: 30px;
         }
 
-        .logo img {
+        .logo-img-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .logo-img-wrap img {
             width: 60px;
             height: 60px;
-            margin-bottom: 15px;
+            object-fit: contain;
+            display: block;
         }
 
         .logo h1 {
@@ -300,7 +308,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <div class="signup-container">
         <div class="logo">
-            <img src="file-apple-logo-black-svg-wikimedia-commons-1.png" alt="Apple Logo">
+            <div class="logo-img-wrap">
+                <img src="file-apple-logo-black-svg-wikimedia-commons-1.png" alt="Apple Logo">
+            </div>
             <h1>Registreren</h1>
             <p>Maak je Apple Store account aan</p>
         </div>
@@ -336,7 +346,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Herhaal je wachtwoord" required>
             </div>
             <div class="terms">
-                Door te registreren ga je akkoord met onze <a href="#">Algemene Voorwaarden</a> en <a href="#">Privacybeleid</a>. We kunnen je e-mails sturen over nieuwe producten en aanbiedingen.
+                Door te registreren ga je akkoord met onze 
+                <a href="algemene-voorwaarden.html" target="_blank">Algemene Voorwaarden</a> 
+                en 
+                <a href="privacybeleid.html" target="_blank">Privacybeleid</a>.
+                We kunnen je e-mails sturen over nieuwe producten en aanbiedingen.
             </div>
             <button type="submit" class="signup-btn">
                 Account aanmaken
@@ -364,4 +378,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </script>
 </body>
 
-</html></html>
+</html>

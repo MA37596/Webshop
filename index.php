@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -455,48 +456,6 @@
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">iphone 14 </a>
-                  </h3>
-
-                  <data class="card-price" value="19">$950</data>
-
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-
-                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="app1.webp" width="384" height="480" loading="lazy"
-                    alt="About The First Night" class="img-cover">
-
-                  <div class="card-action">
-
-                    <button class="action-btn" aria-label="quick view" title="Quick View">
-                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
-                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare" title="Compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn add-to-cart-btn" aria-label="add to cart" title="Add to Cart" data-product-id="iphone14maxpro" data-product-name="Iphone 14 max pro" data-product-price="1500" data-product-image="app1.webp">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                  </div>
-                </div>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
                     <a href="#" class="card-title">IPhone Pro Max</a>
                   </h3>
 
@@ -609,7 +568,7 @@
           <br>
           <p class="section-text">
           Wij komen onze vaste klanten graag tegemoet. Bij aanmelding via de mail krijg je 10% korting bij de eerste volgende 5 aankopen<br>
-            [Actie geldig tot 11 juli 2024. Kortingen kunnen niet worden opgestapeld]
+            [Actie geldig tot 11 juli 2025. Kortingen kunnen niet worden opgestapeld]
           </p>
 
 
@@ -1153,7 +1112,7 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">2024</p>
+            <p class="footer-list-title">2025</p>
           </li>
 
           <li>
@@ -1224,7 +1183,7 @@
       <div class="container">
 
         <p class="copyright">
-          Copyright 2024 | Rayan Aghmer
+          Copyright 2025 | Rayan Aghmer
         </p>
 
         <img src="assets/images/payment-mehtod.png" width="311" height="30" loading="lazy" alt="Payment method"
