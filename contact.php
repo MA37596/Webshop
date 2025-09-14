@@ -31,7 +31,7 @@
     <div class="header-top">
       <div class="container">
 
-        <a href="#" class="logo">
+        <a href="index.php" class="logo">
           <img src="file-apple-logo-black-svg-wikimedia-commons-1.png" width="40" height="28" alt="booken home">
         </a>
 
@@ -43,9 +43,8 @@
 
         <div class="header-action">
 
-          <button class="header-action-btn" aria-label="cart" title="Cart">
-            <span class="span">0</span>
-
+          <button class="header-action-btn cart-btn" aria-label="cart" title="Cart">
+            <span class="cart-counter" style="display: none;">0</span>
             <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
           </button>
 
@@ -82,17 +81,17 @@
           <ul class="navbar-list">
 
             <li>
-              <a class='navbar-link ' href='index.html'>Home</a>
+              <a class='navbar-link ' href='index.php'>Home</a>
             </li>
 
             <li>
-              <a class='navbar-link activ' href='blog.html'>Blog</a>
+              <a class='navbar-link ' href='blog.php'>Blog</a>
             </li>
             <li>
-              <a class='navbar-link ' href='shop.html'>Shop</a>
+              <a class='navbar-link ' href='shop.php'>Shop</a>
             </li>
             <li>
-              <a class='navbar-link' href='contact.html'>Contact</a>
+              <a class='navbar-link activ' href='contact.php'>Contact</a>
             </li>
 
           </ul>
@@ -144,7 +143,7 @@
 
         <div class="footer-brand">
 
-          <a href="#" class="logo">
+          <a href="index.php" class="logo">
             <img src="file-apple-logo-black-svg-wikimedia-commons-1.png" width="40" height="28" alt="booken home">
           </a>
 
@@ -191,27 +190,19 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">2023</p>
+            <p class="footer-list-title">2024</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Update</a>
+            <a href="blog.php" class="footer-link">Blogs</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">About Us</a>
+            <a href="contact.php" class="footer-link">Contact</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Contact Us</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">FAQs</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Vendors</a>
+            <a href="https://support.apple.com/nl-nl" class="footer-link">Veelgestelde vragen</a>
           </li>
 
         </ul>
@@ -219,27 +210,27 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Information</p>
+            <p class="footer-list-title">Informatie</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Online Store</a>
+            <a href="shop.php" class="footer-link">Online Store</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="https://www.apple.com/legal/privacy/en-ww/" class="footer-link">Privacy Policy</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Refund Policy</a>
+            <a href="https://www.apple.com/shop/help/returns_refund" class="footer-link">Refund Policy</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Shipping Policy</a>
+            <a href="https://www.apple.com/shop/help/shipping_delivery" class="footer-link">Shipping Policy</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Terms of Service</a>
+            <a href="https://www.apple.com/legal/internet-services/itunes/" class="footer-link">Terms of Service</a>
           </li>
 
         </ul>
@@ -251,23 +242,19 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Review</a>
+            <a href="https://nl.trustpilot.com/review/www.apple.com" class="footer-link">Reviews</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Positive Dog Training</a>
+            <a href="https://locate.apple.com/nl/nl/service" class="footer-link">Online Support</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Veterinary Services</a>
+            <a href="https://www.google.com/search?q=servicepunten+apple&sca_esv=912db3cc79468e64&rlz=1C1JJTC_enNL1111NL1111&sxsrf=ADLYWILQ-LaSk-TyY6MHFJWhxitTb6_sfQ:1719181222598&udm=1&sa=X&ved=2ahUKEwiO_c6Q4fKGAxVy-gIHHar3D04QjGp6BAhTEAE&biw=2133&bih=1012&dpr=0.9#ip=1" class="footer-link">Service Punten</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Insurance</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Advanced</a>
+            <a href="https://support.apple.com/nl-nl/repair" class="footer-link">Reparaties</a>
           </li>
 
         </ul>
@@ -305,9 +292,11 @@
 
  
   <script src="assets/js/script.js" defer></script>
+  <script src="assets/js/cart.js" defer></script>
+  <script src="assets/js/product-modal.js" defer></script>
 
-  <script type="module" src="../unpkg.com/ionicons%405.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="../unpkg.com/ionicons%405.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>

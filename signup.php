@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inloggen - Apple Store</title>
+    <title>Registreren - Apple Store</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
         body {
@@ -17,19 +17,19 @@
             padding: 20px;
         }
 
-        .signin-container {
+        .signup-container {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(20px);
             padding: 50px;
             border-radius: 20px;
             box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
             width: 100%;
-            max-width: 400px;
+            max-width: 450px;
             position: relative;
             overflow: hidden;
         }
 
-        .signin-container::before {
+        .signup-container::before {
             content: '';
             position: absolute;
             top: 0;
@@ -126,35 +126,23 @@
             color: #007AFF;
         }
 
-        .remember-forgot {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .terms {
             margin-bottom: 30px;
-            font-size: 14px;
-        }
-
-        .remember-me {
-            display: flex;
-            align-items: center;
+            font-size: 13px;
             color: #6e6e73;
+            line-height: 1.5;
         }
 
-        .remember-me input {
-            margin-right: 8px;
-            accent-color: #007AFF;
-        }
-
-        .forgot-password {
+        .terms a {
             color: #007AFF;
             text-decoration: none;
         }
 
-        .forgot-password:hover {
+        .terms a:hover {
             text-decoration: underline;
         }
 
-        .signin-btn {
+        .signup-btn {
             width: 100%;
             padding: 18px;
             background: linear-gradient(135deg, #007AFF, #0056CC);
@@ -171,13 +159,13 @@
             overflow: hidden;
         }
 
-        .signin-btn:hover {
+        .signup-btn:hover {
             background: linear-gradient(135deg, #0056CC, #004BB5);
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(0, 122, 255, 0.3);
         }
 
-        .signin-btn:active {
+        .signup-btn:active {
             transform: translateY(0);
         }
 
@@ -207,19 +195,19 @@
             z-index: 2;
         }
 
-        .signup-link {
+        .login-link {
             text-align: center;
             font-size: 14px;
             color: #6e6e73;
         }
 
-        .signup-link a {
+        .login-link a {
             color: #007AFF;
             text-decoration: none;
             font-weight: 500;
         }
 
-        .signup-link a:hover {
+        .login-link a:hover {
             text-decoration: underline;
         }
 
@@ -244,7 +232,7 @@
         }
 
         @media (max-width: 480px) {
-            .signin-container {
+            .signup-container {
                 padding: 30px 25px;
                 margin: 10px;
             }
@@ -256,47 +244,63 @@
     </style>
 </head>
 <body>
-    <div class="signin-container">
+    <div class="signup-container">
         <div class="logo">
             <img src="file-apple-logo-black-svg-wikimedia-commons-1.png" alt="Apple Logo">
-            <h1>Inloggen</h1>
-            <p>Welkom terug bij Apple Store</p>
+            <h1>Registreren</h1>
+            <p>Maak je Apple Store account aan</p>
         </div>
 
-        <form id="signinForm">
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="firstName">Voornaam</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Je voornaam" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Achternaam</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Je achternaam" required>
+            </div>
+
             <div class="form-group">
                 <label for="email">E-mailadres</label>
                 <input type="email" id="email" name="email" placeholder="naam@voorbeeld.com" required>
             </div>
 
             <div class="form-group">
+                <label for="phone">Telefoonnummer</label>
+                <input type="tel" id="phone" name="phone" placeholder="+31 6 12345678" required>
+            </div>
+
+            <div class="form-group">
                 <label for="password">Wachtwoord</label>
                 <div class="password-field">
-                    <input type="password" id="password" name="password" placeholder="Je wachtwoord" required>
+                    <input type="password" id="password" name="password" placeholder="Minimaal 8 karakters" required>
                     <button type="button" class="password-toggle" onclick="togglePassword()">
                         <span id="toggleIcon">👁️</span>
                     </button>
                 </div>
             </div>
 
-            <div class="remember-forgot">
-                <div class="remember-me">
-                    <input type="checkbox" id="remember">
-                    <label for="remember">Onthouden</label>
-                </div>
-                <a href="#" class="forgot-password">Wachtwoord vergeten?</a>
+            <div class="form-group">
+                <label for="confirmPassword">Bevestig wachtwoord</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Herhaal je wachtwoord" required>
             </div>
 
-            <button type="submit" class="signin-btn">
-                Inloggen
+            <div class="terms">
+                Door te registreren ga je akkoord met onze <a href="#">Algemene Voorwaarden</a> en <a href="#">Privacybeleid</a>. We kunnen je e-mails sturen over nieuwe producten en aanbiedingen.
+            </div>
+
+            <button type="submit" class="signup-btn">
+                Account aanmaken
             </button>
 
             <div class="divider">
                 <span>of</span>
             </div>
 
-            <div class="signup-link">
-                Nog geen account? <a href="signup.php">Registreren</a>
+            <div class="login-link">
+                Al een account? <a href="signin.php">Inloggen</a>
             </div>
         </form>
     </div>
@@ -315,22 +319,27 @@
             }
         }
 
-        document.getElementById('signinForm').addEventListener('submit', function(e) {
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
             
-            if (!email || !password) {
-                showMessage('Vul alle velden in', 'error');
+            if (password !== confirmPassword) {
+                showMessage('Wachtwoorden komen niet overeen', 'error');
                 return;
             }
             
-            // Simuleer inloggen
-            showMessage('Succesvol ingelogd! Je wordt doorgestuurd...', 'success');
+            if (password.length < 8) {
+                showMessage('Wachtwoord moet minimaal 8 karakters bevatten', 'error');
+                return;
+            }
+            
+            // Simuleer registratie
+            showMessage('Account succesvol aangemaakt! Je wordt doorgestuurd...', 'success');
             
             setTimeout(() => {
-                window.location.href = 'index.php';
+                window.location.href = 'signin.php';
             }, 2000);
         });
 
@@ -345,11 +354,9 @@
             messageDiv.className = type === 'error' ? 'error-message' : 'success-message';
             messageDiv.textContent = message;
             
-            const form = document.getElementById('signinForm');
+            const form = document.getElementById('signupForm');
             form.insertBefore(messageDiv, form.firstChild);
         }
     </script>
 </body>
-
-
 </html>

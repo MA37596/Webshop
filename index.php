@@ -52,7 +52,8 @@
 
         <div class="header-action">
 
-          <button class="header-action-btn" aria-label="cart" title="Cart">
+          <button class="header-action-btn cart-btn" aria-label="cart" title="Cart">
+            <span class="cart-counter" style="display: none;">0</span>
             <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
           </button>
 
@@ -61,7 +62,7 @@
           </button>
 
           <button class="header-action-btn" aria-label="user" title="User">
-            <a href='signin.php'>
+            <a href='signup.php'>
               <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
             </a>
           </button>
@@ -276,7 +277,7 @@
                       <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                    <button class="action-btn add-to-cart-btn" aria-label="add to cart" title="Add to Cart" data-product-id="iphone14maxpro" data-product-name="Iphone 14 max pro" data-product-price="1500" data-product-image="app1.webp">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                     </button>
 
@@ -286,18 +287,11 @@
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Iphone 14 max pro</a>
+                    <a href="#" class="card-title">iPhone 15 Pro</a>
                   </h3>
 
-                  <data class="card-price" value="80">$1500</data>
+                  <data class="card-price" value="1199">€1199</data>
 
-                  <div class="rating-wrapper">
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                  </div>
 
                 </div>
 
@@ -325,56 +319,7 @@
                       <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                  </div>
-                </div>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">iphone 14 </a>
-                  </h3>
-
-                  <data class="card-price" value="19">$1200</data>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-
-                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="app1.webp" width="384" height="480" loading="lazy"
-                    alt="About The First Night" class="img-cover">
-
-                  <div class="card-action">
-
-                    <button class="action-btn" aria-label="quick view" title="Quick View">
-                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
-                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare" title="Compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                    <button class="action-btn add-to-cart-btn" aria-label="add to cart" title="Add to Cart" data-product-id="iphone14maxpro" data-product-name="Iphone 14 max pro" data-product-price="1500" data-product-image="app1.webp">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                     </button>
 
@@ -389,13 +334,6 @@
 
                   <data class="card-price" value="19">$1200</data>
 
-                  <div class="rating-wrapper">
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                  </div>
 
                 </div>
 
@@ -423,7 +361,7 @@
                       <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                    <button class="action-btn add-to-cart-btn" aria-label="add to cart" title="Add to Cart" data-product-id="iphone14maxpro" data-product-name="Iphone 14 max pro" data-product-price="1500" data-product-image="app1.webp">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                     </button>
 
@@ -438,13 +376,6 @@
 
                   <data class="card-price" value="19">$1200</data>
 
-                  <div class="rating-wrapper">
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                  </div>
 
                 </div>
 
@@ -472,7 +403,49 @@
                       <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                    <button class="action-btn add-to-cart-btn" aria-label="add to cart" title="Add to Cart" data-product-id="iphone14maxpro" data-product-name="Iphone 14 max pro" data-product-price="1500" data-product-image="app1.webp">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">iphone 14 </a>
+                  </h3>
+
+                  <data class="card-price" value="19">$1200</data>
+
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="app1.webp" width="384" height="480" loading="lazy"
+                    alt="About The First Night" class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn add-to-cart-btn" aria-label="add to cart" title="Add to Cart" data-product-id="iphone14maxpro" data-product-name="Iphone 14 max pro" data-product-price="1500" data-product-image="app1.webp">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                     </button>
 
@@ -487,13 +460,6 @@
 
                   <data class="card-price" value="19">$950</data>
 
-                  <div class="rating-wrapper">
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                  </div>
 
                 </div>
 
@@ -521,7 +487,7 @@
                       <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                    <button class="action-btn add-to-cart-btn" aria-label="add to cart" title="Add to Cart" data-product-id="iphone14maxpro" data-product-name="Iphone 14 max pro" data-product-price="1500" data-product-image="app1.webp">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                     </button>
 
@@ -536,13 +502,6 @@
 
                   <data class="card-price" value="19">$1200</data>
 
-                  <div class="rating-wrapper">
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                  </div>
 
                 </div>
 
@@ -570,7 +529,7 @@
                       <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                    <button class="action-btn add-to-cart-btn" aria-label="add to cart" title="Add to Cart" data-product-id="iphone14maxpro" data-product-name="Iphone 14 max pro" data-product-price="1500" data-product-image="app1.webp">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                     </button>
 
@@ -585,13 +544,6 @@
 
                   <data class="card-price" value="19">$650</data>
 
-                  <div class="rating-wrapper">
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                  </div>
 
                 </div>
 
@@ -619,7 +571,7 @@
                       <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                    <button class="action-btn add-to-cart-btn" aria-label="add to cart" title="Add to Cart" data-product-id="iphone14maxpro" data-product-name="Iphone 14 max pro" data-product-price="1500" data-product-image="app1.webp">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                     </button>
 
@@ -634,13 +586,6 @@
 
                   <data class="card-price" value="19">$550</data>
 
-                  <div class="rating-wrapper">
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                  </div>
 
                 </div>
 
@@ -763,7 +708,7 @@
                       <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                    <button class="action-btn add-to-cart-btn" aria-label="add to cart" title="Add to Cart" data-product-id="iphone14maxpro" data-product-name="Iphone 14 max pro" data-product-price="1500" data-product-image="app1.webp">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                     </button>
 
@@ -778,13 +723,6 @@
 
                   <data class="card-price" value="34">$819</data>
 
-                  <div class="rating-wrapper">
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                  </div>
 
                 </div>
 
@@ -812,7 +750,7 @@
                       <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                    <button class="action-btn add-to-cart-btn" aria-label="add to cart" title="Add to Cart" data-product-id="iphone14maxpro" data-product-name="Iphone 14 max pro" data-product-price="1500" data-product-image="app1.webp">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                     </button>
 
@@ -827,13 +765,6 @@
 
                   <data class="card-price" value="34">$969</data>
 
-                  <div class="rating-wrapper">
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                  </div>
 
                 </div>
 
@@ -861,7 +792,7 @@
                       <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                    <button class="action-btn add-to-cart-btn" aria-label="add to cart" title="Add to Cart" data-product-id="iphone14maxpro" data-product-name="Iphone 14 max pro" data-product-price="1500" data-product-image="app1.webp">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                     </button>
 
@@ -876,13 +807,6 @@
 
                   <data class="card-price" value="34">$1250</data>
 
-                  <div class="rating-wrapper">
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                  </div>
 
                 </div>
 
@@ -910,7 +834,7 @@
                       <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                    <button class="action-btn add-to-cart-btn" aria-label="add to cart" title="Add to Cart" data-product-id="iphone14maxpro" data-product-name="Iphone 14 max pro" data-product-price="1500" data-product-image="app1.webp">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                     </button>
 
@@ -925,13 +849,6 @@
 
                   <data class="card-price" value="34">$3.419</data>
 
-                  <div class="rating-wrapper">
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                  </div>
 
                 </div>
 
@@ -959,7 +876,7 @@
                       <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                    <button class="action-btn add-to-cart-btn" aria-label="add to cart" title="Add to Cart" data-product-id="iphone14maxpro" data-product-name="Iphone 14 max pro" data-product-price="1500" data-product-image="app1.webp">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                     </button>
 
@@ -974,13 +891,6 @@
 
                   <data class="card-price" value="34">$399</data>
 
-                  <div class="rating-wrapper">
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                  </div>
 
                 </div>
 
@@ -1008,7 +918,7 @@
                       <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                    <button class="action-btn add-to-cart-btn" aria-label="add to cart" title="Add to Cart" data-product-id="iphone14maxpro" data-product-name="Iphone 14 max pro" data-product-price="1500" data-product-image="app1.webp">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                     </button>
 
@@ -1023,13 +933,6 @@
 
                   <data class="card-price" value="34">$499</data>
 
-                  <div class="rating-wrapper">
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                  </div>
 
                 </div>
 
@@ -1057,7 +960,7 @@
                       <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                    <button class="action-btn add-to-cart-btn" aria-label="add to cart" title="Add to Cart" data-product-id="iphone14maxpro" data-product-name="Iphone 14 max pro" data-product-price="1500" data-product-image="app1.webp">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                     </button>
 
@@ -1070,15 +973,8 @@
                     <a href="#" class="card-title">Apple IMac M3</a>
                   </h3>
 
-                  <data class="card-price" value="34">$3500</data>
+                  <data class="card-price" value="34">€3500</data>
 
-                  <div class="rating-wrapper">
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                  </div>
 
                 </div>
 
@@ -1104,10 +1000,10 @@
       <section class="section blog" aria-label="blog">
         <div class="container">
 
-          <h2 class="h2 section-title">Tech Nieuws</h2>
+          <h2 class="h2 section-title">Telefoon Tips & Accessoires</h2>
 
           <p class="section-text">
-            De meest actuele tech nieuws
+            Alles wat je moet weten over je telefoon en de beste accessoires
           </p>
 
           <ul class="has-scrollbar">
@@ -1116,14 +1012,14 @@
               <div class="blog-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="assets/images/ios.webp" width="600" height="400" loading="lazy"
-                    alt="Ios update" class="img-cover">
+                  <img src="assets/images/iphone14.webp" width="600" height="400" loading="lazy"
+                    alt="iPhone onderhoud" class="img-cover">
                 </figure>
 
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="https://tweakers.net/nieuws/223536/apple-apple-intelligence-komt-dit-jaar-waarschijnlijk-niet-naar-eu.html" class="card-title">Apple Intelligence komt dit jaar waarschijnlijk niet naar EU</a>
+                    <a href="#" class="card-title">5 Tips om je iPhone batterij langer te laten meegaan</a>
                   </h3>
 
                   <ul class="card-meta-list">
@@ -1133,16 +1029,16 @@
                     </li>
 
                     <li class="meta-item">
-                      <a href="https://tweakers.net/nieuws/223536/apple-apple-intelligence-komt-dit-jaar-waarschijnlijk-niet-naar-eu.html" class="meta-link">3k Reacties</a>
+                      <a href="#" class="meta-link">2.5k Reacties</a>
                     </li>
 
                   </ul>
 
                   <p class="card-text">
-                    Apple acht het onwaarschijnlijk dat bepaalde iOS 18-functies, waaronder Apple Intelligence, dit jaar in de Europese Unie zullen worden geïntroduceerd.
+                    Ontdek hoe je de batterijduur van je iPhone kunt verlengen met deze praktische tips. Van schermhelderheid tot achtergrond-apps.
                   </p>
 
-                  <a href="https://tweakers.net/nieuws/223536/apple-apple-intelligence-komt-dit-jaar-waarschijnlijk-niet-naar-eu.html" class="btn card-btn">Lees Meer...</a>
+                  <a href="#" class="btn card-btn">Lees Meer...</a>
 
                 </div>
 
@@ -1153,14 +1049,14 @@
               <div class="blog-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="assets/images/nvidia.webp" width="600" height="400" loading="lazy"
-                    alt="Nvidia" class="img-cover">
+                  <img src="assets/images/mac.webp" width="600" height="400" loading="lazy"
+                    alt="Accessoires" class="img-cover">
                 </figure>
 
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="https://nos.nl/artikel/2525139-chipmaker-nvidia-dankzij-ai-hype-meest-waardevolle-bedrijf-op-de-beurs" class="card-title">Chipmaker Nvidia dankzij AI-hype meest waardevolle bedrijf op de beurs</a>
+                    <a href="#" class="card-title">Must-have accessoires voor je nieuwe iPhone</a>
                   </h3>
 
                   <ul class="card-meta-list">
@@ -1170,15 +1066,16 @@
                     </li>
 
                     <li class="meta-item">
-                      <a href="https://nos.nl/artikel/2525139-chipmaker-nvidia-dankzij-ai-hype-meest-waardevolle-bedrijf-op-de-beurs" class="meta-link">10k Reacties</a>
+                      <a href="#" class="meta-link">1.8k Reacties</a>
                     </li>
 
                   </ul>
 
                   <p class="card-text">
-                    Nvidia, een Amerikaanse chipfabrikant die gespecialiseerd is in videokaarten, is voor het eerst het meest waardevolle bedrijf ter wereld op de beurs. </p>
+                    Van beschermende hoesjes tot draadloze opladers. Ontdek welke accessoires je echt nodig hebt voor je iPhone.
+                  </p>
 
-                  <a href="https://nos.nl/artikel/2525139-chipmaker-nvidia-dankzij-ai-hype-meest-waardevolle-bedrijf-op-de-beurs" class="btn card-btn">Lees Meer...</a>
+                  <a href="#" class="btn card-btn">Lees Meer...</a>
 
                 </div>
 
@@ -1189,14 +1086,14 @@
               <div class="blog-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="assets/images/finalcut.webp" width="600" height="400" loading="lazy"
-                    alt="Finalcut" class="img-cover">
+                  <img src="assets/images/visionpro.webp" width="600" height="400" loading="lazy"
+                    alt="Telefoon vergelijking" class="img-cover">
                 </figure>
 
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="https://tweakers.net/nieuws/223532/apple-brengt-final-cut-camera-uit-voor-iphone.html#:~:text=Apple%20heeft%20de%20Final%20Cut,van%20Final%20Cut%20Pro%20aangekondigd." class="card-title">Apple brengt Final Cut Camera uit voor iPhone</a>
+                    <a href="#" class="card-title">iPhone 14 vs iPhone 15: Welke moet je kiezen?</a>
                   </h3>
 
                   <ul class="card-meta-list">
@@ -1206,16 +1103,16 @@
                     </li>
 
                     <li class="meta-item">
-                      <a href="https://tweakers.net/nieuws/223532/apple-brengt-final-cut-camera-uit-voor-iphone.html#:~:text=Apple%20heeft%20de%20Final%20Cut,van%20Final%20Cut%20Pro%20aangekondigd." class="meta-link">5k Reacties</a>
+                      <a href="#" class="meta-link">3.2k Reacties</a>
                     </li>
 
                   </ul>
 
                   <p class="card-text">
-                    Apple heeft de Final Cut Camera-app uitgebracht op de App Store. Hierdoor kunnen iPhone-gebruikers de camera van hun smartphone koppelen aan Final Cut Pro for iPad 2.
+                    Vergelijk de iPhone 14 en iPhone 15 om te bepalen welke telefoon het beste bij jouw behoeften past.
                   </p>
 
-                  <a href="https://tweakers.net/nieuws/223532/apple-brengt-final-cut-camera-uit-voor-iphone.html#:~:text=Apple%20heeft%20de%20Final%20Cut,van%20Final%20Cut%20Pro%20aangekondigd." class="btn card-btn">Lees Meer...</a>
+                  <a href="#" class="btn card-btn">Lees Meer...</a>
 
                 </div>
 
@@ -1353,10 +1250,12 @@
 
 
   <script src="assets/js/script.js" defer></script>
+  <script src="assets/js/cart.js" defer></script>
+  <script src="assets/js/product-modal.js" defer></script>
 
 
-  <script type="module" src="../unpkg.com/ionicons%405.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="../unpkg.com/ionicons%405.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

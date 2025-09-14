@@ -30,7 +30,7 @@
     <div class="header-top">
       <div class="container">
 
-        <a href="index.html" class="logo">
+        <a href="index.php" class="logo">
           <img src="file-apple-logo-black-svg-wikimedia-commons-1.png" width="40" height="28" alt="booken home">
         </a>
 
@@ -42,9 +42,8 @@
 
         <div class="header-action">
 
-          <button class="header-action-btn" aria-label="cart" title="Cart">
-            <span class="span">0</span>
-
+          <button class="header-action-btn cart-btn" aria-label="cart" title="Cart">
+            <span class="cart-counter" style="display: none;">0</span>
             <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
           </button>
 
@@ -81,18 +80,18 @@
           <ul class="navbar-list">
 
             <li>
-              <a class='navbar-link ' href='index.html'>Home</a>
+              <a class='navbar-link ' href='index.php'>Home</a>
             </li>
 
             <li>
-              <a class='navbar-link activ' href='blog.html'>Blog</a>
+              <a class='navbar-link activ' href='blog.php'>Blog</a>
             </li>
 
             <li>
-              <a class='navbar-link ' href='shop.html'>Shop</a>
+              <a class='navbar-link ' href='shop.php'>Shop</a>
             </li>  
             <li>
-              <a class='navbar-link' href='contact.html'>Contact</a>
+              <a class='navbar-link' href='contact.php'>Contact</a>
             </li>
 
           </ul>
@@ -116,10 +115,10 @@
         <div class="container">
             <br><br><br><br><br><br>
 
-          <h2 class="h2 section-title">Laatste Tech Nieuws</h2>
+          <h2 class="h2 section-title">Telefoon Nieuws & Reviews</h2>
 
           <p class="section-text">
-          De Meest Actuele Tech Nieuws 
+          De nieuwste ontwikkelingen en reviews van smartphones en accessoires
           </p>
 
           <ul class="grid-list">
@@ -128,14 +127,14 @@
               <div class="blog-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="assets/images/appleintelligence.webp" width="600" height="400" loading="lazy"
-                    alt="AI" class="img-cover">
+                  <img src="assets/images/iphone14.webp" width="600" height="400" loading="lazy"
+                    alt="iPhone 15 Pro review" class="img-cover">
                 </figure>
 
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Siri toch nog niet slimmer: Apple stelt AI-functies in EU uit</a>
+                    <a href="#" class="card-title">iPhone 15 Pro Review: Is de upgrade het waard?</a>
                   </h3>
 
                   <ul class="card-meta-list">
@@ -145,13 +144,13 @@
                     </li>
 
                     <li class="meta-item">
-                      <a href="#" class="meta-link">5k comment</a>
+                      <a href="#" class="meta-link">2.3k comment</a>
                     </li>
 
                   </ul>
 
                   <p class="card-text">
-                   Apple Stelt vanwege Europese wetgevingen de AI-functies uit in Europa
+                   Een uitgebreide review van de iPhone 15 Pro. We testen de camera, prestaties en batterijduur om te zien of de upgrade van je huidige iPhone de moeite waard is.
                   </p>
 
                   <a href="#" class="btn card-btn">Lees Meer...</a>
@@ -165,14 +164,14 @@
                 <div class="blog-card">
   
                   <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                    <img src="assets/images/europeesparlement.webp" width="600" height="400" loading="lazy"
-                      alt="Europees Parlement" class="img-cover">
+                    <img src="assets/images/mac.webp" width="600" height="400" loading="lazy"
+                      alt="Accessoires" class="img-cover">
                   </figure>
   
                   <div class="card-content">
   
                     <h3 class="h3">
-                      <a href="https://www.nu.nl/tech-wetenschap/6318064/apple-schendt-eu-regels-met-app-store-en-riskeert-miljardenboete.html" class="card-title">Apple schendt EU-regels met App Store en riskeert miljardenboete</a>
+                      <a href="#" class="card-title">Top 10 iPhone accessoires voor 2024</a>
                     </h3>
   
                     <ul class="card-meta-list">
@@ -182,16 +181,16 @@
                       </li>
   
                       <li class="meta-item">
-                        <a href="#" class="meta-link">1k comment</a>
+                        <a href="#" class="meta-link">1.7k comment</a>
                       </li>
   
                     </ul>
   
                     <p class="card-text">
-                      De Europese Commissie heeft Apple officieel beschuldigd van machtsmisbruik. De iPhonefabrikant hanteert regels in zijn App Store waarmee concurrenten worden benadeeld.
+                      Ontdek de beste iPhone accessoires van dit jaar. Van draadloze opladers tot professionele camera accessoires - we hebben de top picks voor je op een rijtje gezet.
                     </p>
   
-                    <a href="https://www.nu.nl/tech-wetenschap/6318064/apple-schendt-eu-regels-met-app-store-en-riskeert-miljardenboete.html" class="btn card-btn">Lees Meer...</a>
+                    <a href="#" class="btn card-btn">Lees Meer...</a>
   
                   </div>
   
@@ -202,14 +201,14 @@
                 <div class="blog-card">
   
                   <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                    <img src="assets/images/applemeta.webp" width="600" height="400" loading="lazy"
-                      alt="Applemeta" class="img-cover">
+                    <img src="assets/images/iphone14wit.webp" width="600" height="400" loading="lazy"
+                      alt="iPhone onderhoud" class="img-cover">
                   </figure>
   
                   <div class="card-content">
   
                     <h3 class="h3">
-                      <a href="https://tweakers.net/nieuws/223558/wsj-apple-voerde-gesprekken-met-meta-over-integreren-ai-model-in-iphones.html" class="card-title">Apple voerde gesprekken met Meta over integreren AI-model in iPhones</a>
+                      <a href="#" class="card-title">Hoe houd je je iPhone schoon en beschermd?</a>
                     </h3>
   
                     <ul class="card-meta-list">
@@ -219,50 +218,13 @@
                       </li>
   
                       <li class="meta-item">
-                        <a href="https://tweakers.net/nieuws/223558/wsj-apple-voerde-gesprekken-met-meta-over-integreren-ai-model-in-iphones.html" class="meta-link">5k comment</a>
+                        <a href="#" class="meta-link">1.2k comment</a>
                       </li>
   
                     </ul>
   
                     <p class="card-text">
-                      Apple en Meta hebben gesprekken gevoerd over het integreren van het generatieve AI-model Llama in Apple Intelligence, een reeks AI-functies die later dit jaar onder meer naar bepaalde nieuwere iPhones komt. 
-                    </p>
-  
-                    <a href="https://tweakers.net/nieuws/223558/wsj-apple-voerde-gesprekken-met-meta-over-integreren-ai-model-in-iphones.html" class="btn card-btn">Lees Meer...</a>
-  
-                  </div>
-  
-                </div>
-              </li>
-
-              <li>
-                <div class="blog-card">
-  
-                  <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                    <img src="" width="600" height="400" loading="lazy"
-                      alt="" class="img-cover">
-                  </figure>
-  
-                  <div class="card-content">
-  
-                    <h3 class="h3">
-                      <a href="#" class="card-title"></a>
-                    </h3>
-  
-                    <ul class="card-meta-list">
-  
-                      <li class="meta-item">
-                        <time class="meta-link" datetime="2024-03-04">09 March, 2023</time>
-                      </li>
-  
-                      <li class="meta-item">
-                        <a href="#" class="meta-link">99k comment</a>
-                      </li>
-  
-                    </ul>
-  
-                    <p class="card-text">
-  
+                      Leer de beste manieren om je iPhone schoon te houden en te beschermen tegen krassen en schade. Tips voor schermbeschermers, hoesjes en schoonmaakmiddelen.
                     </p>
   
                     <a href="#" class="btn card-btn">Lees Meer...</a>
@@ -272,70 +234,34 @@
                 </div>
               </li>
 
-              <li>
-                <div class="blog-card">
-  
-                  <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                    <img src="../i.pinimg.com/564x/1e/3c/d4/1e3cd411d25c2517455c4ac940c7f861.jpg" width="600" height="400" loading="lazy"
-                      alt="" class="img-cover">
-                  </figure>
-  
-                  <div class="card-content">
-  
-                    <h3 class="h3">
-                      <a href="#" class="card-title"></a>
-                    </h3>
-  
-                    <ul class="card-meta-list">
-  
-                      <li class="meta-item">
-                        <time class="meta-link" datetime="2024-03-04">09 Juni, 2024</time>
-                      </li>
-  
-                      <li class="meta-item">
-                        <a href="#" class="meta-link">99k comment</a>
-                      </li>
-  
-                    </ul>
-  
-                    <p class="card-text">
-  
-                    </p>
-  
-                    <a href="#" class="btn card-btn">Lees Meer...</a>
-  
-                  </div>
-  
-                </div>
-              </li>
 
             <li>
               <div class="blog-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
                   <img src="assets/images/beats.webp" width="600" height="400" loading="lazy"
-                    alt="" class="img-cover">
+                    alt="AirPods review" class="img-cover">
                 </figure>
 
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Deze nieuwe speaker van Apple kan mee naar het strand</a>
+                    <a href="#" class="card-title">AirPods vs andere draadloze oortjes: Wat is de beste keuze?</a>
                   </h3>
                   <ul class="card-meta-list">
 
                     <li class="meta-item">
                     
-                      <time class="meta-link" datetime="2024-06-04">07 Juni, 2023</time>
+                      <time class="meta-link" datetime="2024-06-04">07 Juni, 2024</time>
                     </li>
 
                     <li class="meta-item">
-                      <a href="#" class="meta-link">100k comment</a>
+                      <a href="#" class="meta-link">3.1k comment</a>
                     </li>
 
                   </ul>
 
-                  <p class="card-text">De nieuwe versie van de draagbare speaker van het Apple-merk Beats is officieel aangekondigd. De nieuwe Beats Pill heeft een batterijduur van 24 uur en is later deze zomer ook in Nederland te koop.</p>
+                  <p class="card-text">Vergelijk verschillende draadloze oortjes met de Apple AirPods. We testen geluidskwaliteit, batterijduur, comfort en prijs-kwaliteit verhouding om je te helpen de beste keuze te maken.</p>
 
                   <a href="#" class="btn card-btn">Lees Meer...</a>
 
@@ -381,11 +307,11 @@
           </li>
 
           <li>
-            <a href="blog.html" class="footer-link">Blogs</a>
+            <a href="blog.php" class="footer-link">Blogs</a>
           </li>
 
           <li>
-            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="contact.php" class="footer-link">Contact</a>
           </li>
 
           <li>
@@ -400,7 +326,7 @@
           </li>
 
           <li>
-            <a href="shop.html" class="footer-link">Online Store</a>
+            <a href="shop.php" class="footer-link">Online Store</a>
           </li>
 
           <li>
@@ -473,10 +399,12 @@
 
 
   <script src="assets/js/script.js" defer></script>
+  <script src="assets/js/cart.js" defer></script>
+  <script src="assets/js/product-modal.js" defer></script>
 
   
-  <script type="module" src="../unpkg.com/ionicons%405.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="../unpkg.com/ionicons%405.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
