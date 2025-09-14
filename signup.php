@@ -1,3 +1,57 @@
+<?php
+// Database connectie
+$host = 'localhost';
+$db   = 'webshop';
+$user = 'root';
+$pass = '';
+$charset = 'utf8mb4';
+
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+$options = [
+    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+];
+
+$message = '';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Formulier data ophalen
+    $firstName = trim($_POST['firstName']);
+    $lastName = trim($_POST['lastName']);
+    $email = trim($_POST['email']);
+    $phone = trim($_POST['phone']);
+    $password = $_POST['password'];
+    $confirmPassword = $_POST['confirmPassword'];
+
+    // Validatie
+    if ($password !== $confirmPassword) {
+        $message = '<div class="error-message">Wachtwoorden komen niet overeen</div>';
+    } elseif (strlen($password) < 8) {
+        $message = '<div class="error-message">Wachtwoord moet minimaal 8 karakters bevatten</div>';
+    } else {
+        try {
+            $pdo = new PDO($dsn, $user, $pass, $options);
+
+            // Check of email al bestaat
+            $stmt = $pdo->prepare("SELECT id FROM users WHERE email = ?");
+            $stmt->execute([$email]);
+            if ($stmt->fetch()) {
+                $message = '<div class="error-message">E-mailadres is al geregistreerd</div>';
+            } else {
+                // Hash het wachtwoord
+                $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+
+                // Voeg gebruiker toe
+                $stmt = $pdo->prepare("INSERT INTO users (first_name, last_name, email, phone, password_hash) VALUES (?, ?, ?, ?, ?)");
+                $stmt->execute([$firstName, $lastName, $email, $phone, $passwordHash]);
+                $message = '<div class="success-message">Account succesvol aangemaakt! Je wordt doorgestuurd...</div>';
+                header("refresh:2;url=signin.php");
+            }
+        } catch (PDOException $e) {
+            $message = '<div class="error-message">Database fout: ' . htmlspecialchars($e->getMessage()) . '</div>';
+        }
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -250,28 +304,24 @@
             <h1>Registreren</h1>
             <p>Maak je Apple Store account aan</p>
         </div>
-
-        <form id="signupForm">
+        <?php echo $message; ?>
+        <form id="signupForm" method="POST" autocomplete="off">
             <div class="form-group">
                 <label for="firstName">Voornaam</label>
                 <input type="text" id="firstName" name="firstName" placeholder="Je voornaam" required>
             </div>
-
             <div class="form-group">
                 <label for="lastName">Achternaam</label>
                 <input type="text" id="lastName" name="lastName" placeholder="Je achternaam" required>
             </div>
-
             <div class="form-group">
                 <label for="email">E-mailadres</label>
                 <input type="email" id="email" name="email" placeholder="naam@voorbeeld.com" required>
             </div>
-
             <div class="form-group">
                 <label for="phone">Telefoonnummer</label>
                 <input type="tel" id="phone" name="phone" placeholder="+31 6 12345678" required>
             </div>
-
             <div class="form-group">
                 <label for="password">Wachtwoord</label>
                 <div class="password-field">
@@ -281,35 +331,28 @@
                     </button>
                 </div>
             </div>
-
             <div class="form-group">
                 <label for="confirmPassword">Bevestig wachtwoord</label>
                 <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Herhaal je wachtwoord" required>
             </div>
-
             <div class="terms">
                 Door te registreren ga je akkoord met onze <a href="#">Algemene Voorwaarden</a> en <a href="#">Privacybeleid</a>. We kunnen je e-mails sturen over nieuwe producten en aanbiedingen.
             </div>
-
             <button type="submit" class="signup-btn">
                 Account aanmaken
             </button>
-
             <div class="divider">
                 <span>of</span>
             </div>
-
             <div class="login-link">
                 Al een account? <a href="signin.php">Inloggen</a>
             </div>
         </form>
     </div>
-
     <script>
         function togglePassword() {
             const passwordField = document.getElementById('password');
             const toggleIcon = document.getElementById('toggleIcon');
-            
             if (passwordField.type === 'password') {
                 passwordField.type = 'text';
                 toggleIcon.textContent = '🙈';
@@ -318,45 +361,7 @@
                 toggleIcon.textContent = '👁️';
             }
         }
-
-        document.getElementById('signupForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const password = document.getElementById('password').value;
-            const confirmPassword = document.getElementById('confirmPassword').value;
-            
-            if (password !== confirmPassword) {
-                showMessage('Wachtwoorden komen niet overeen', 'error');
-                return;
-            }
-            
-            if (password.length < 8) {
-                showMessage('Wachtwoord moet minimaal 8 karakters bevatten', 'error');
-                return;
-            }
-            
-            // Simuleer registratie
-            showMessage('Account succesvol aangemaakt! Je wordt doorgestuurd...', 'success');
-            
-            setTimeout(() => {
-                window.location.href = 'signin.php';
-            }, 2000);
-        });
-
-        function showMessage(message, type) {
-            // Verwijder bestaande berichten
-            const existingMessage = document.querySelector('.error-message, .success-message');
-            if (existingMessage) {
-                existingMessage.remove();
-            }
-            
-            const messageDiv = document.createElement('div');
-            messageDiv.className = type === 'error' ? 'error-message' : 'success-message';
-            messageDiv.textContent = message;
-            
-            const form = document.getElementById('signupForm');
-            form.insertBefore(messageDiv, form.firstChild);
-        }
     </script>
 </body>
-</html>
+
+</html></html>

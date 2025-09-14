@@ -1,10 +1,61 @@
+<?php
+session_start();
+
+$host = 'localhost';
+$db   = 'webshop';
+$user = 'root';
+$pass = '';
+$charset = 'utf8mb4';
+
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+$options = [
+    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+];
+
+$message = '';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $email = trim($_POST['email'] ?? '');
+    $password = $_POST['password'] ?? '';
+
+    // Server-side validatie
+    if ($email === '' || $password === '') {
+        $message = '<div class="error-message">Vul alle velden in</div>';
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $message = '<div class="error-message">Ongeldig e-mailadres</div>';
+    } else {
+        try {
+            $pdo = new PDO($dsn, $user, $pass, $options);
+
+            // Zoek gebruiker op basis van e-mail
+            $stmt = $pdo->prepare("SELECT id, first_name, password_hash FROM users WHERE email = ?");
+            $stmt->execute([$email]);
+            $user = $stmt->fetch();
+
+            // Controleer of gebruiker bestaat en wachtwoord klopt
+            if ($user && password_verify($password, $user['password_hash'])) {
+                session_regenerate_id(true);
+                $_SESSION['user_id'] = $user['id'];
+                $_SESSION['first_name'] = $user['first_name'];
+
+                header("Location: index.php");
+                exit;
+            } else {
+                $message = '<div class="error-message">Ongeldige e-mail of wachtwoord</div>';
+            }
+        } catch (PDOException $e) {
+            $message = '<div class="error-message">Database fout: ' . htmlspecialchars($e->getMessage()) . '</div>';
+        }
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Inloggen - Apple Store</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <style>
         body {
             font-family: 'Jost', sans-serif;
@@ -17,19 +68,19 @@
             padding: 20px;
         }
 
-        .signin-container {
+        .signup-container {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(20px);
             padding: 50px;
             border-radius: 20px;
             box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
             width: 100%;
-            max-width: 400px;
+            max-width: 450px;
             position: relative;
             overflow: hidden;
         }
 
-        .signin-container::before {
+        .signup-container::before {
             content: '';
             position: absolute;
             top: 0;
@@ -44,10 +95,18 @@
             margin-bottom: 30px;
         }
 
-        .logo img {
+        .logo-img-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .logo-img-wrap img {
             width: 60px;
             height: 60px;
-            margin-bottom: 15px;
+            object-fit: contain;
+            display: block;
         }
 
         .logo h1 {
@@ -126,35 +185,7 @@
             color: #007AFF;
         }
 
-        .remember-forgot {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 30px;
-            font-size: 14px;
-        }
-
-        .remember-me {
-            display: flex;
-            align-items: center;
-            color: #6e6e73;
-        }
-
-        .remember-me input {
-            margin-right: 8px;
-            accent-color: #007AFF;
-        }
-
-        .forgot-password {
-            color: #007AFF;
-            text-decoration: none;
-        }
-
-        .forgot-password:hover {
-            text-decoration: underline;
-        }
-
-        .signin-btn {
+        .signup-btn {
             width: 100%;
             padding: 18px;
             background: linear-gradient(135deg, #007AFF, #0056CC);
@@ -171,14 +202,28 @@
             overflow: hidden;
         }
 
-        .signin-btn:hover {
+        .signup-btn:hover {
             background: linear-gradient(135deg, #0056CC, #004BB5);
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(0, 122, 255, 0.3);
         }
 
-        .signin-btn:active {
+        .signup-btn:active {
             transform: translateY(0);
+        }
+
+        .login-btn {
+            background: linear-gradient(135deg, #34C759, #007AFF);
+            font-size: 18px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .login-btn span {
+            font-size: 20px;
         }
 
         .divider {
@@ -207,19 +252,23 @@
             z-index: 2;
         }
 
-        .signup-link {
+        .login-link {
             text-align: center;
-            font-size: 14px;
-            color: #6e6e73;
+            font-size: 15px;
+            color: #143150ff;
+            margin-top: 18px;
         }
 
-        .signup-link a {
-            color: #007AFF;
+        .login-link a {
+            color: #143150ff;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
+            padding-left: 4px;
+            transition: color 0.2s;
         }
 
-        .signup-link a:hover {
+        .login-link a:hover {
+            color: #0056CC;
             text-decoration: underline;
         }
 
@@ -244,11 +293,10 @@
         }
 
         @media (max-width: 480px) {
-            .signin-container {
+            .signup-container {
                 padding: 30px 25px;
                 margin: 10px;
             }
-            
             .logo h1 {
                 font-size: 24px;
             }
@@ -258,21 +306,23 @@
 <body>
     <div class="signin-container">
         <div class="logo">
-            <img src="file-apple-logo-black-svg-wikimedia-commons-1.png" alt="Apple Logo">
-            <h1>Inloggen</h1>
-            <p>Welkom terug bij Apple Store</p>
+            <div class="logo-img-wrap">
+                <img src="file-apple-logo-black-svg-wikimedia-commons-1.png" alt="Apple Logo">
+            </div>
+            <h1>Welkom terug</h1>
+            <p>Log in bij Apple Store</p>
         </div>
-
-        <form id="signinForm">
+        <?php echo $message; ?>
+        <form id="signinForm" method="POST" autocomplete="off">
             <div class="form-group">
                 <label for="email">E-mailadres</label>
-                <input type="email" id="email" name="email" placeholder="naam@voorbeeld.com" required>
+                <input type="email" id="email" name="email" placeholder="naam@voorbeeld.com" required />
             </div>
 
             <div class="form-group">
                 <label for="password">Wachtwoord</label>
                 <div class="password-field">
-                    <input type="password" id="password" name="password" placeholder="Je wachtwoord" required>
+                    <input type="password" id="password" name="password" placeholder="Je wachtwoord" required />
                     <button type="button" class="password-toggle" onclick="togglePassword()">
                         <span id="toggleIcon">👁️</span>
                     </button>
@@ -281,22 +331,16 @@
 
             <div class="remember-forgot">
                 <div class="remember-me">
-                    <input type="checkbox" id="remember">
-                    <label for="remember">Onthouden</label>
                 </div>
                 <a href="#" class="forgot-password">Wachtwoord vergeten?</a>
             </div>
 
-            <button type="submit" class="signin-btn">
-                Inloggen
-            </button>
+            <button type="submit" class="signup-btn login-btn">
+                <span>🔒</span> Inloggen
+            </button>         
 
-            <div class="divider">
-                <span>of</span>
-            </div>
-
-            <div class="signup-link">
-                Nog geen account? <a href="signup.php">Registreren</a>
+            <div class="login-link">
+                Nog geen account? <a href="signup.php">Account aanmaken</a>
             </div>
         </form>
     </div>
@@ -305,7 +349,7 @@
         function togglePassword() {
             const passwordField = document.getElementById('password');
             const toggleIcon = document.getElementById('toggleIcon');
-            
+
             if (passwordField.type === 'password') {
                 passwordField.type = 'text';
                 toggleIcon.textContent = '🙈';
@@ -316,40 +360,38 @@
         }
 
         document.getElementById('signinForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const email = document.getElementById('email').value;
+            const email = document.getElementById('email').value.trim();
             const password = document.getElementById('password').value;
-            
+
             if (!email || !password) {
+                e.preventDefault();
                 showMessage('Vul alle velden in', 'error');
-                return;
+            } else if (!validateEmail(email)) {
+                e.preventDefault();
+                showMessage('Ongeldig e-mailadres', 'error');
             }
-            
-            // Simuleer inloggen
-            showMessage('Succesvol ingelogd! Je wordt doorgestuurd...', 'success');
-            
-            setTimeout(() => {
-                window.location.href = 'index.php';
-            }, 2000);
+            // Bij geldige invoer wordt formulier gewoon verzonden
         });
 
         function showMessage(message, type) {
-            // Verwijder bestaande berichten
             const existingMessage = document.querySelector('.error-message, .success-message');
             if (existingMessage) {
                 existingMessage.remove();
             }
-            
+
             const messageDiv = document.createElement('div');
             messageDiv.className = type === 'error' ? 'error-message' : 'success-message';
             messageDiv.textContent = message;
-            
+
             const form = document.getElementById('signinForm');
             form.insertBefore(messageDiv, form.firstChild);
         }
+
+        function validateEmail(email) {
+            // Eenvoudige e-mail validatie regex
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email.toLowerCase());
+        }
     </script>
 </body>
-
-
 </html>
