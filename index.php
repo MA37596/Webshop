@@ -9,7 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Apple</title>
+  <title>Apple Store</title>
   <meta name="title" content="Apple">
   <meta name="description" content="This is a e-commerce website. ">
 
@@ -149,7 +149,7 @@
           </div>
 
           <figure class="hero-banner">
-            <img src="iphone13red.png" width="475" height="600" alt="hero banner" class="w-100">
+            <img src="assets/images/iphone17.png" width="475" height="600" alt="hero banner" class="w-100">
           </figure>
 
         </div>
@@ -247,7 +247,7 @@
       <section class="section featured" aria-label="featured collection">
         <div class="container">
 
-          <h2 class="h2 section-title">Aanbevolen Collectie</h2>
+          <h2 class="h2 section-title">Back To School</h2>
 
           <p class="section-text">
            Nieuwste Collectie op voorraad -
@@ -261,7 +261,7 @@
                 <span class="card-badge">New</span>
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="app1.webp" width="384" height="480" loading="lazy" alt="Black Night"
+                  <img src="assets/images/ipada16.jpg" width="384" height="480" loading="lazy" alt="Moet nog gemaakt worden"
                     class="img-cover">
 
                   <div class="card-action">
@@ -278,7 +278,7 @@
                       <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-                    <button class="action-btn add-to-cart-btn" aria-label="add to cart" title="Add to Cart" data-product-id="iphone14maxpro" data-product-name="Iphone 14 max pro" data-product-price="1500" data-product-image="app1.webp">
+                    <button class="action-btn add-to-cart-btn" aria-label="add to cart" title="Add to Cart" data-product-id="IPad A16 Chip" data-product-name="IPad A16 Chip" data-product-price="1199" data-product-image="assets/images/ipada16.jpg">
                       <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                     </button>
 
@@ -288,7 +288,7 @@
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">iPhone 15 Pro</a>
+                    <a href="#" class="card-title">IPad A16 Chip</a>
                   </h3>
 
                   <data class="card-price" value="1199">€1199</data>
@@ -304,7 +304,7 @@
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
                   <img src="app1.webp" width="384" height="480" loading="lazy"
-                    alt="About The First Night" class="img-cover">
+                    alt="moet nog gemaakt worden" class="img-cover">
 
                   <div class="card-action">
 
@@ -330,7 +330,7 @@
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">iphone 14 </a>
+                    <a href="#" class="card-title">Macbook Air M4</a>
                   </h3>
 
                   <data class="card-price" value="19">$1200</data>
@@ -346,7 +346,7 @@
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
                   <img src="app1.webp" width="384" height="480" loading="lazy"
-                    alt="About The First Night" class="img-cover">
+                    alt="moet nog gemaakt worden" class="img-cover">
 
                   <div class="card-action">
 
@@ -372,7 +372,7 @@
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">iphone 14 </a>
+                    <a href="#" class="card-title">Mac Mini M4</a>
                   </h3>
 
                   <data class="card-price" value="19">$1200</data>
@@ -387,8 +387,8 @@
               <div class="product-card">
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="app1.webp" width="384" height="480" loading="lazy"
-                    alt="About The First Night" class="img-cover">
+                  <img src="assets/images/ipadpro.jpg" width="384" height="480" loading="lazy"
+                    alt="IPad Pro" class="img-cover">
 
                   <div class="card-action">
 
@@ -414,7 +414,7 @@
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">iphone 14 </a>
+                    <a href="#" class="card-title">IPad Pro</a>
                   </h3>
 
                   <data class="card-price" value="19">$1200</data>
@@ -429,8 +429,8 @@
               <div class="product-card">
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="app1.webp" width="384" height="480" loading="lazy"
-                    alt="About The First Night" class="img-cover">
+                  <img src="assets/images/iphone16.png" width="384" height="480" loading="lazy"
+                    alt="Iphone 16" class="img-cover">
 
                   <div class="card-action">
 
@@ -456,7 +456,7 @@
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">IPhone Pro Max</a>
+                    <a href="#" class="card-title">IPhone 16</a>
                   </h3>
 
                   <data class="card-price" value="19">$1200</data>
@@ -471,8 +471,8 @@
               <div class="product-card">
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="app1.webp" width="384" height="480" loading="lazy"
-                    alt="About The First Night" class="img-cover">
+                  <img src="assets/images/airpodsmax.png" width="384" height="480" loading="lazy"
+                    alt="airpods max" class="img-cover">
 
                   <div class="card-action">
 
@@ -498,7 +498,7 @@
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">IPhone 14 Pro</a>
+                    <a href="#" class="card-title">Airpods Max</a>
                   </h3>
 
                   <data class="card-price" value="19">$650</data>
@@ -514,7 +514,7 @@
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
                   <img src="app1.webp" width="384" height="480" loading="lazy"
-                    alt="About The First Night" class="img-cover">
+                    alt="Moet gemaakt worden" class="img-cover">
 
                   <div class="card-action">
 
@@ -540,7 +540,7 @@
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">IPhone 14</a>
+                    <a href="#" class="card-title">Airpods Pro</a>
                   </h3>
 
                   <data class="card-price" value="19">$550</data>
@@ -550,10 +550,51 @@
 
               </div>
             </li>
+ <li>
+              <div class="product-card">
 
+                <div class="card-banner img-holder" style="--width: 382; --height: 480;">
+                  <img src="assets/images/imac.png" width="384" height="480" loading="lazy"
+                    alt="Moet gemaakt worden" class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn add-to-cart-btn" aria-label="add to cart" title="Add to Cart" data-product-id="iphone14maxpro" data-product-name="Iphone 14 max pro" data-product-price="1500" data-product-image="app1.webp">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">IMac M4</a>
+                  </h3>
+
+                  <data class="card-price" value="19">$550</data>
+
+
+                </div>
+
+              </div>
+            </li>
           </ul>
 
         </div>
+        
       </section>
 
 
@@ -568,7 +609,7 @@
           <br>
           <p class="section-text">
           Wij komen onze vaste klanten graag tegemoet. Bij aanmelding via de mail krijg je 10% korting bij de eerste volgende 5 aankopen<br>
-            [Actie geldig tot 11 juli 2025. Kortingen kunnen niet worden opgestapeld]
+            [Actie geldig tot 11 juli 2026. Kortingen kunnen niet worden opgestapeld]
           </p>
 
 
@@ -650,7 +691,7 @@
               <div class="product-card">
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="app1.webp" width="384" height="480" loading="lazy" alt="Self Care"
+                  <img src="app1.webp" width="384" height="480" loading="lazy" alt="Moet nog gemaakt worden"
                     class="img-cover">
 
                   <div class="card-action">
@@ -677,7 +718,7 @@
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">IPhone 15 White</a>
+                    <a href="#" class="card-title">IPhone 15</a>
                   </h3>
 
                   <data class="card-price" value="34">$819</data>
@@ -692,7 +733,7 @@
               <div class="product-card">
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="app1.webp" width="384" height="480" loading="lazy" alt="Self Care"
+                  <img src="app1.webp" width="384" height="480" loading="lazy" alt="Moet nog gemaakt worden"
                     class="img-cover">
 
                   <div class="card-action">
@@ -719,7 +760,7 @@
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">IPhone 15 Pro White</a>
+                    <a href="#" class="card-title">IPhone 15 Pro</a>
                   </h3>
 
                   <data class="card-price" value="34">$969</data>
@@ -734,7 +775,7 @@
               <div class="product-card">
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="app1.webp" width="384" height="480" loading="lazy" alt="Self Care"
+                  <img src="app1.webp" width="384" height="480" loading="lazy" alt="Moet nog gemaakt worden"
                     class="img-cover">
 
                   <div class="card-action">
@@ -761,7 +802,7 @@
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">iPhone 15 Pro Max White</a>
+                    <a href="#" class="card-title">iPhone 15 Pro Max</a>
                   </h3>
 
                   <data class="card-price" value="34">$1250</data>
@@ -776,7 +817,7 @@
               <div class="product-card">
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="assets/images/product-macbook-air-spacegray.webp" width="384" height="480" loading="lazy" alt="Self Care"
+                  <img src="assets/images/product-macbook-air-spacegray.webp" width="384" height="480" loading="lazy" alt="Moet nog gemaakt worden"
                     class="img-cover">
 
                   <div class="card-action">
@@ -818,7 +859,7 @@
               <div class="product-card">
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="assets/images/iphone14wit.webp" width="384" height="480" loading="lazy" alt="Self Care"
+                  <img src="assets/images/iphone14wit.webp" width="384" height="480" loading="lazy" alt="Moet nog gemaakt worden"
                     class="img-cover">
 
                   <div class="card-action">
@@ -845,7 +886,7 @@
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Apple IPhone 14 White</a>
+                    <a href="#" class="card-title">Apple IPhone 14</a>
                   </h3>
 
                   <data class="card-price" value="34">$399</data>
@@ -860,7 +901,7 @@
               <div class="product-card">
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="app1.webp" width="384" height="480" loading="lazy" alt="Self Care"
+                  <img src="app1.webp" width="384" height="480" loading="lazy" alt="Moet nog gemaakt worden"
                     class="img-cover">
 
                   <div class="card-action">
@@ -887,7 +928,7 @@
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">IPhone 13 Pro White</a>
+                    <a href="#" class="card-title">IPhone 13 Pro</a>
                   </h3>
 
                   <data class="card-price" value="34">$499</data>
@@ -902,7 +943,7 @@
               <div class="product-card">
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="assets/images/imac-silver.webp" width="100" height="100" loading="lazy" alt="Self Care"
+                  <img src="assets/images/imac-silver.webp" width="100" height="100" loading="lazy" alt="Moet nog gemaakt worden"
                     class="img-cover">
 
                   <div class="card-action">
