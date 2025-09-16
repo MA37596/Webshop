@@ -404,9 +404,9 @@ class ShoppingCart {
         }
         
         // Voor nu redirect naar contact pagina als checkout
-        this.showNotification('Checkout functionaliteit komt binnenkort!');
+        this.showNotification('Checkout functionaliteit komt niet!');
         setTimeout(() => {
-            window.location.href = 'contact.php';
+            window.location.href = 'shop.php';
         }, 2000);
     }
 }

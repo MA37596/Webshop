@@ -855,7 +855,7 @@
               <div class="product-card">
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="assets/images/iphone14wit.webp" width="384" height="480" loading="lazy" alt="Moet nog gemaakt worden"
+                  <img src="assets/images/iphone14.jpg" width="384" height="480" loading="lazy" alt="Moet nog gemaakt worden"
                     class="img-cover">
 
                   <div class="card-action">
@@ -897,7 +897,7 @@
               <div class="product-card">
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="app1.webp" width="384" height="480" loading="lazy" alt="Moet nog gemaakt worden"
+                  <img src="assets/images/iphone13.avif" width="384" height="480" loading="lazy" alt="Moet nog gemaakt worden"
                     class="img-cover">
 
                   <div class="card-action">

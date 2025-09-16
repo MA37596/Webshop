@@ -119,7 +119,7 @@
                 <span class="card-badge">New</span>
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="assets/images/iphone14.webp" width="384" height="480" loading="lazy" alt="iPhone 15 Pro"
+                  <img src="assets/images/iphone13.avif" width="384" height="480" loading="lazy" alt="iPhone 15 Pro"
                     class="img-cover">
 
                   <div class="card-action">
@@ -168,7 +168,7 @@
               <div class="product-card">
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="assets/images/iphone14wit.webp" width="384" height="480" loading="lazy"
+                  <img src="assets/images/iphone15promax.jpg" width="384" height="480" loading="lazy"
                     alt="iPhone 15" class="img-cover">
 
                   <div class="card-action">
@@ -195,7 +195,7 @@
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">iPhone 15</a>
+                    <a href="#" class="card-title">iPhone 15 Pro Max</a>
                   </h3>
 
                   <data class="card-price" value="1200">€1200</data>
