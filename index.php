@@ -97,10 +97,6 @@
             </li>
 
             <li>
-              <a class='navbar-link' href='blog.php'>Blog</a>
-            </li>
-
-            <li>
               <a class='navbar-link' href='shop.php'>Shop</a>
             </li>
             <li>
@@ -303,7 +299,7 @@
               <div class="product-card">
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="app1.webp" width="384" height="480" loading="lazy"
+                  <img src="assets/images/macbook.jpg" width="384" height="480" loading="lazy"
                     alt="moet nog gemaakt worden" class="img-cover">
 
                   <div class="card-action">
@@ -333,7 +329,7 @@
                     <a href="#" class="card-title">Macbook Air M4</a>
                   </h3>
 
-                  <data class="card-price" value="19">$1200</data>
+                  <data class="card-price" value="19">€1200</data>
 
 
                 </div>
@@ -345,7 +341,7 @@
               <div class="product-card">
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="app1.webp" width="384" height="480" loading="lazy"
+                  <img src="assets/images/macmini.jpg" width="384" height="480" loading="lazy"
                     alt="moet nog gemaakt worden" class="img-cover">
 
                   <div class="card-action">
@@ -375,7 +371,7 @@
                     <a href="#" class="card-title">Mac Mini M4</a>
                   </h3>
 
-                  <data class="card-price" value="19">$1200</data>
+                  <data class="card-price" value="19">€1200</data>
 
 
                 </div>
@@ -417,7 +413,7 @@
                     <a href="#" class="card-title">IPad Pro</a>
                   </h3>
 
-                  <data class="card-price" value="19">$1200</data>
+                  <data class="card-price" value="19">€1200</data>
 
 
                 </div>
@@ -459,7 +455,7 @@
                     <a href="#" class="card-title">IPhone 16</a>
                   </h3>
 
-                  <data class="card-price" value="19">$1200</data>
+                  <data class="card-price" value="19">€1200</data>
 
 
                 </div>
@@ -501,7 +497,7 @@
                     <a href="#" class="card-title">Airpods Max</a>
                   </h3>
 
-                  <data class="card-price" value="19">$650</data>
+                  <data class="card-price" value="19">€650</data>
 
 
                 </div>
@@ -513,7 +509,7 @@
               <div class="product-card">
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="app1.webp" width="384" height="480" loading="lazy"
+                  <img src="assets/images/airpodspro.png" width="384" height="480" loading="lazy"
                     alt="Moet gemaakt worden" class="img-cover">
 
                   <div class="card-action">
@@ -543,7 +539,7 @@
                     <a href="#" class="card-title">Airpods Pro</a>
                   </h3>
 
-                  <data class="card-price" value="19">$550</data>
+                  <data class="card-price" value="19">€550</data>
 
 
                 </div>
@@ -584,7 +580,7 @@
                     <a href="#" class="card-title">IMac M4</a>
                   </h3>
 
-                  <data class="card-price" value="19">$550</data>
+                  <data class="card-price" value="19">€550</data>
 
 
                 </div>
@@ -721,7 +717,7 @@
                     <a href="#" class="card-title">IPhone 15</a>
                   </h3>
 
-                  <data class="card-price" value="34">$819</data>
+                  <data class="card-price" value="34">€819</data>
 
 
                 </div>
@@ -763,7 +759,7 @@
                     <a href="#" class="card-title">IPhone 15 Pro</a>
                   </h3>
 
-                  <data class="card-price" value="34">$969</data>
+                  <data class="card-price" value="34">€969</data>
 
 
                 </div>
@@ -805,7 +801,7 @@
                     <a href="#" class="card-title">iPhone 15 Pro Max</a>
                   </h3>
 
-                  <data class="card-price" value="34">$1250</data>
+                  <data class="card-price" value="34">€1250</data>
 
 
                 </div>
@@ -847,7 +843,7 @@
                     <a href="#" class="card-title">Apple MacBook M3 Pro</a>
                   </h3>
 
-                  <data class="card-price" value="34">$3.419</data>
+                  <data class="card-price" value="34">€3.419</data>
 
 
                 </div>
@@ -889,7 +885,7 @@
                     <a href="#" class="card-title">Apple IPhone 14</a>
                   </h3>
 
-                  <data class="card-price" value="34">$399</data>
+                  <data class="card-price" value="34">€399</data>
 
 
                 </div>
@@ -931,7 +927,7 @@
                     <a href="#" class="card-title">IPhone 13 Pro</a>
                   </h3>
 
-                  <data class="card-price" value="34">$499</data>
+                  <data class="card-price" value="34">€499</data>
 
 
                 </div>
@@ -976,7 +972,7 @@
                   <data class="card-price" value="34">€3500</data>
 
 
-                </div>
+                </div>  
 
               </div>
             </li>
@@ -1155,11 +1151,6 @@
           <li>
             <p class="footer-list-title">2025</p>
           </li>
-
-          <li>
-            <a href="blog.php" class="footer-link">Blogs</a>
-          </li>
-
           <li>
             <a href="contact.php" class="footer-link">Contact</a>
           </li>

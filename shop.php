@@ -82,11 +82,6 @@
             <li>
               <a class='navbar-link ' href='index.php'>Home</a>
             </li>
-
-            <li>
-              <a class='navbar-link ' href='blog.php'>Blog</a>
-            </li>
-
             <li>
               <a class='navbar-link activ' href='shop.php'>Shop</a>
             </li>  
@@ -346,11 +341,6 @@
           <li>
             <p class="footer-list-title">2024</p>
           </li>
-
-          <li>
-            <a href="blog.php" class="footer-link">Blogs</a>
-          </li>
-
           <li>
             <a href="contact.php" class="footer-link">Contact</a>
           </li>
