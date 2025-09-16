@@ -686,8 +686,8 @@
             <li class="scrollbar-item" data-filter="sell">
               <div class="product-card">
 
-                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="app1.webp" width="384" height="480" loading="lazy" alt="Moet nog gemaakt worden"
+              <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="assets/images/iphone14.jpg" width="384" height="480" loading="lazy" alt="Moet nog gemaakt worden"
                     class="img-cover">
 
                   <div class="card-action">
@@ -729,7 +729,7 @@
               <div class="product-card">
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="app1.webp" width="384" height="480" loading="lazy" alt="Moet nog gemaakt worden"
+                  <img src="assets/images/iphone13.avif" width="384" height="480" loading="lazy" alt="Moet nog gemaakt worden"
                     class="img-cover">
 
                   <div class="card-action">
@@ -771,7 +771,7 @@
               <div class="product-card">
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="app1.webp" width="384" height="480" loading="lazy" alt="Moet nog gemaakt worden"
+                  <img src="assets/images/iphone15promax.jpg" width="384" height="480" loading="lazy" alt="Moet nog gemaakt worden"
                     class="img-cover">
 
                   <div class="card-action">
@@ -1007,11 +1007,6 @@
             <li class="scrollbar-item">
               <div class="blog-card">
 
-                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="assets/images/iphone14.webp" width="600" height="400" loading="lazy"
-                    alt="iPhone onderhoud" class="img-cover">
-                </figure>
-
                 <div class="card-content">
 
                   <h3 class="h3">
@@ -1043,11 +1038,6 @@
 
             <li class="scrollbar-item">
               <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="assets/images/mac.webp" width="600" height="400" loading="lazy"
-                    alt="Accessoires" class="img-cover">
-                </figure>
 
                 <div class="card-content">
 
@@ -1081,10 +1071,7 @@
             <li class="scrollbar-item">
               <div class="blog-card">
 
-                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="assets/images/visionpro.webp" width="600" height="400" loading="lazy"
-                    alt="Telefoon vergelijking" class="img-cover">
-                </figure>
+               
 
                 <div class="card-content">
 
