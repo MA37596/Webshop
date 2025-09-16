@@ -679,7 +679,7 @@
           <h2 class="h2 section-title">Populaire Collectie</h2>
 
           <p class="section-text">
-           De meest bestelde producten in Juni
+           De meest bestelde producten in September
           </p>
           <ul class="product-list has-scrollbar">
 
@@ -996,10 +996,10 @@
       <section class="section blog" aria-label="blog">
         <div class="container">
 
-          <h2 class="h2 section-title">Telefoon Tips & Accessoires</h2>
+          <h2 class="h2 section-title">Telefoon Tips & Blogs</h2>
 
           <p class="section-text">
-            Alles wat je moet weten over je telefoon en de beste accessoires
+            Alles wat je moet weten over je telefoon en de beste Blogs
           </p>
 
           <ul class="has-scrollbar">
@@ -1010,26 +1010,26 @@
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">5 Tips om je iPhone batterij langer te laten meegaan</a>
+                    <a href="https://www.iculture.nl/ios/ios-26/" class="card-title">Downloaden maar: iOS 26 nu uit voor je iPhone – en is de grootste update ooit </a>
                   </h3>
 
                   <ul class="card-meta-list">
 
                     <li class="meta-item">
-                      <time class="meta-link" datetime="2024-21-06">21 juni, 2024</time>
+                      <time class="meta-link" datetime="2025-16-09">16 September 2025</time>
                     </li>
 
                     <li class="meta-item">
-                      <a href="#" class="meta-link">2.5k Reacties</a>
+                      <a href="https://www.iculture.nl/ios/ios-26/" class="meta-link">2.5k Reacties</a>
                     </li>
 
                   </ul>
 
                   <p class="card-text">
-                    Ontdek hoe je de batterijduur van je iPhone kunt verlengen met deze praktische tips. Van schermhelderheid tot achtergrond-apps.
+                  Alles wat je moet weten over iOS 26 lees je hier. De nieuwste update is nu beschikbaar voor de iPhone, Met een nieuw design, heel veel nieuwe functies en meer is het de grootste iOS-update ooit. 
                   </p>
 
-                  <a href="#" class="btn card-btn">Lees Meer...</a>
+                  <a href="https://www.iculture.nl/ios/ios-26/" class="btn card-btn">Lees Meer...</a>
 
                 </div>
 
@@ -1042,26 +1042,26 @@
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Must-have accessoires voor je nieuwe iPhone</a>
+                    <a href="https://www.iculture.nl/gids/sinds-ios-update-batterij-sneller-leeg/" class="card-title">Sinds iOS 26 is je iPhone-batterij sneller leeg? Dit kun je eraan doen! </a>
                   </h3>
 
                   <ul class="card-meta-list">
 
                     <li class="meta-item">
-                      <time class="meta-link" datetime="2024-18-05">18 mei 2024</time>
+                      <time class="meta-link" datetime="2025-17-09">17 September 2025</time>
                     </li>
 
                     <li class="meta-item">
-                      <a href="#" class="meta-link">1.8k Reacties</a>
+                      <a href="https://www.iculture.nl/gids/sinds-ios-update-batterij-sneller-leeg/" class="meta-link">1.8k Reacties</a>
                     </li>
 
                   </ul>
 
                   <p class="card-text">
-                    Van beschermende hoesjes tot draadloze opladers. Ontdek welke accessoires je echt nodig hebt voor je iPhone.
+                   Bij elke nieuwe update van iOS kan de batterij van je iPhone of iPad sneller leeglopen. In dit artikel lees je tips om te achterhalen waarom de update je batterij leegtrekt en hoe je het oplost
                   </p>
 
-                  <a href="#" class="btn card-btn">Lees Meer...</a>
+                  <a href="https://www.iculture.nl/gids/sinds-ios-update-batterij-sneller-leeg/" class="btn card-btn">Lees Meer...</a>
 
                 </div>
 
@@ -1076,26 +1076,26 @@
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">iPhone 14 vs iPhone 15: Welke moet je kiezen?</a>
+                    <a href="https://www.iculture.nl/ipados/ipados-26/" class="card-title">iPadOS 26 is nu beschikbaar voor iedereen</a>
                   </h3>
 
                   <ul class="card-meta-list">
 
                     <li class="meta-item">
-                      <time class="meta-link" datetime="2024-21-06">21 juni, 2024</time>
+                      <time class="meta-link" datetime="2025-17-09">17 September, 2025</time>
                     </li>
 
                     <li class="meta-item">
-                      <a href="#" class="meta-link">3.2k Reacties</a>
+                      <a href="https://www.iculture.nl/ipados/ipados-26/" class="meta-link">3.2k Reacties</a>
                     </li>
 
                   </ul>
 
                   <p class="card-text">
-                    Vergelijk de iPhone 14 en iPhone 15 om te bepalen welke telefoon het beste bij jouw behoeften past.
+                 Wat is er nieuw in iPadOS 26? Op deze pagina lees je alle informatie over iPadOS 26, zoals functies, de releasedatum en geschikte toestellen. 
                   </p>
 
-                  <a href="#" class="btn card-btn">Lees Meer...</a>
+                  <a href="https://www.iculture.nl/ipados/ipados-26/" class="btn card-btn">Lees Meer...</a>
 
                 </div>
 
